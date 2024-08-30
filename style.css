@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #262626;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+    
+}
+nav .logo{
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+
+}
+.logo span{
+    color: crimson
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* position: relative; */
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    height: 3px;
+    background: crimson;
+    width: 0;
+    transition: width 0.5s ;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    margin-top: 50px;
+    margin-left: 10%;
+    
+}
+.col1{
+    flex-basis: 50%;
+    width: 100%;
+    margin-top: 30px;
+   
+}
+.col2{
+    flex-basis: 40%;
+    width: 100%;
+   
+}
+.col2 img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.col1 h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+.col1 h2 span{
+    color: crimson;
+}
+.col1 h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(243, 12, 58);
+    margin-bottom: 30px;
+}
+
+.col1 {
+    color: crimson;
+}
+.col1 p{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+.hire , .view{
+    border: 2px solid crimson;
+    color: #fff;
+    background: #262626;
+    padding: 10px 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.hire{
+    background: crimson;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.hire:hover ,.view:hover{
+    background: crimson;
+}
+.icon a{
+    color: #fff;
+    background: #262626;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 20px;
+    
+}
+.icon a i{
+    margin-top: 50px;
+    margin-left: 30px;
+    transition: transfrom .5s;
+}
+
+.icon a i:hover{
+    color: crimson;
+    transition: color 0.5s;
+    transform: scale(1.3);
+
+}
+@media only screen and (max-width: 600px) {
+    nav .logo {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .col1, .col2 {
+        flex-basis: 100%;
+    }
+
+    .col2 img {
+        height: 300px;
+    }
+
+    .col1 h2 {
+        font-size: 1.2rem;
+    }
+
+    .col1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .col1 p {
+        font-size: 1rem;
+    }
+
+    .hire, .view {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+    .hire{
+        margin-bottom: 15px;
+    }
+
+    .icon a {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    /* Adjust styles as needed */
+}
+
+/* Medium devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    /* Adjust styles as needed */
+}
+
